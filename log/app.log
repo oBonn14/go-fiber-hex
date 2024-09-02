@@ -2,3 +2,5 @@
 {"time":"2024-08-31T15:11:54.6759195+07:00","level":"INFO","msg":"Successfully connected to the database","db":"db_golang"}
 {"time":"2024-08-31T15:12:54.8771223+07:00","level":"INFO","msg":"Database app initialized","app":"go-fiber-hex","env":"development"}
 {"time":"2024-08-31T15:12:54.893616+07:00","level":"INFO","msg":"Successfully connected to the database","db":"db_golang"}
+{"time":"2024-09-02T10:11:01.6881982+07:00","level":"INFO","msg":"Database app initialized","app":"go-fiber-hex","env":"development"}
+{"time":"2024-09-02T10:11:01.6901562+07:00","level":"INFO","msg":"Successfully connected to the database","db":"db_golang"}
