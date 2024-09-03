@@ -4,15 +4,17 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/oBonn14/go-fiber-hex/config"
 	"github.com/oBonn14/go-fiber-hex/model"
-	"github.com/oBonn14/go-fiber-hex/service"
+	"github.com/oBonn14/go-fiber-hex/port"
 )
 
 type ProductController struct {
-	ctr service.ProductService
+	ctr port.ProductServiceInterface
 }
 
-func NewProductController(ctr service.ProductService) *ProductController {
-	return &ProductController{ctr}
+func NewProductController(ctr port.ProductServiceInterface) *ProductController {
+	return &ProductController{
+		ctr,
+	}
 }
 
 type createProductRequest struct {

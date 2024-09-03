@@ -5,6 +5,9 @@ import (
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 	db "github.com/oBonn14/go-fiber-hex/config"
+	"github.com/oBonn14/go-fiber-hex/controller"
+	"github.com/oBonn14/go-fiber-hex/repository"
+	"github.com/oBonn14/go-fiber-hex/service"
 	"log/slog"
 	"os"
 )
@@ -21,10 +24,14 @@ func main() {
 
 	slog.Info("Database app initialized", "app", config.App.Name, "env", config.App.Env)
 
-	_, err = db.NewDB(config.DB)
-	if err != nil {
-		os.Exit(1)
-	}
+	data, _ := db.NewDB(config.DB)
+	repo := repository.NewProductRepository(data)
+	service := service.NewProductService(repo)
+	productController := controller.NewProductController(service)
+
+	//if err != nil {
+	//	os.Exit(1)
+	//}
 
 	app := fiber.New()
 
@@ -32,6 +39,8 @@ func main() {
 		Format:     "${time} [${ip}]:${port} | ${status} | ${method} ${path} | ${latency}\n",
 		TimeFormat: "2006-01-02 15:04:05",
 	}))
+
+	controller.NewRouter(app, *productController)
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.JSON("Hello Obonn")

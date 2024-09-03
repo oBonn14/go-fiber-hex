@@ -6,7 +6,7 @@ import (
 	"github.com/oBonn14/go-fiber-hex/model"
 )
 
-type ProductRepository interface {
+type ProductRepositoryInterface interface {
 	CreateProduct(ctx context.Context, product model.Product) (*model.Product, error)
 
 	GetProduct(ctx context.Context, id string) (*model.Product, error)
@@ -18,8 +18,8 @@ type ProductRepository interface {
 	DeleteProduct(ctx context.Context, id string) (*model.Product, error)
 }
 
-type ProductService interface {
-	CreateProduct(ctx context.Context, product model.Product) (*model.Product, error)
+type ProductServiceInterface interface {
+	CreateProduct(ctx context.Context, product *model.Product) (*model.Product, error)
 
 	GetProduct(ctx context.Context, id string) (*model.Product, error)
 

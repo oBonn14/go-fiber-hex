@@ -3,15 +3,17 @@ package service
 import (
 	"context"
 	"github.com/oBonn14/go-fiber-hex/model"
-	"github.com/oBonn14/go-fiber-hex/repository"
+	"github.com/oBonn14/go-fiber-hex/port"
 )
 
 type ProductService struct {
-	repo repository.ProductRepository
+	repo port.ProductRepositoryInterface
 }
 
-func NewProducttService(repo repository.ProductRepository) *ProductService {
-	return &ProductService{repo}
+func NewProductService(repo port.ProductRepositoryInterface) *ProductService {
+	return &ProductService{
+		repo,
+	}
 }
 
 func (ps *ProductService) CreateProduct(ctx context.Context, product *model.Product) (*model.Product, error) {
