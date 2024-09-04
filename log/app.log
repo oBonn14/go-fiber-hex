@@ -4,3 +4,23 @@
 {"time":"2024-08-31T15:12:54.893616+07:00","level":"INFO","msg":"Successfully connected to the database","db":"db_golang"}
 {"time":"2024-09-02T10:11:01.6881982+07:00","level":"INFO","msg":"Database app initialized","app":"go-fiber-hex","env":"development"}
 {"time":"2024-09-02T10:11:01.6901562+07:00","level":"INFO","msg":"Successfully connected to the database","db":"db_golang"}
+{"time":"2024-09-03T19:22:38.410865+07:00","level":"INFO","msg":"Database app initialized","app":"go-fiber-hex","env":"development"}
+{"time":"2024-09-03T19:22:38.4155445+07:00","level":"INFO","msg":"Successfully connected to the database","db":"db_golang"}
+{"time":"2024-09-04T13:46:05.9570494+07:00","level":"INFO","msg":"Database app initialized","app":"go-fiber-hex","env":"development"}
+{"time":"2024-09-04T13:46:05.9710525+07:00","level":"INFO","msg":"Successfully connected to the database","db":"db_golang"}
+{"time":"2024-09-04T13:55:17.4690518+07:00","level":"INFO","msg":"Execution Time (Insert New Product): 8.7005ms"}
+{"time":"2024-09-04T13:56:55.0353625+07:00","level":"INFO","msg":"Execution Time (Insert New Product): 584.6µs"}
+{"time":"2024-09-04T14:02:02.0764116+07:00","level":"INFO","msg":"Database app initialized","app":"go-fiber-hex","env":"development"}
+{"time":"2024-09-04T14:02:02.0887973+07:00","level":"INFO","msg":"Successfully connected to the database","db":"db_golang"}
+{"time":"2024-09-04T14:02:09.3010638+07:00","level":"INFO","msg":"Execution Time (Insert New Product): 1.0371ms"}
+{"time":"2024-09-04T14:03:01.3766609+07:00","level":"INFO","msg":"{ObjectID(\"66d805f1663de8d32653b1ab\") Buku 2}"}
+{"time":"2024-09-04T14:03:01.3766609+07:00","level":"INFO","msg":"Execution Time (Insert New Product): 2.0035ms"}
+{"time":"2024-09-04T14:03:22.5501458+07:00","level":"INFO","msg":"Execution Time (Insert New Product): 1.3545ms"}
+{"time":"2024-09-04T14:03:26.8874778+07:00","level":"INFO","msg":"{ObjectID(\"66d805f1663de8d32653b1ab\") Buku 2}"}
+{"time":"2024-09-04T14:03:26.8875048+07:00","level":"INFO","msg":"{ObjectID(\"66d8063a663de8d32653b1ac\") Milkjug 2}"}
+{"time":"2024-09-04T14:03:26.8875048+07:00","level":"INFO","msg":"Execution Time (Insert New Product): 1.6333ms"}
+{"time":"2024-09-04T14:04:09.2225097+07:00","level":"INFO","msg":"Execution Time (Insert New Product) : 3.1515ms"}
+{"time":"2024-09-04T14:04:57.2862109+07:00","level":"INFO","msg":"Execution Time (Update Product): 7.8803ms"}
+{"time":"2024-09-04T14:05:01.988206+07:00","level":"INFO","msg":"{ObjectID(\"66d805f1663de8d32653b1ab\") Buku 2}"}
+{"time":"2024-09-04T14:05:01.988206+07:00","level":"INFO","msg":"{ObjectID(\"66d8063a663de8d32653b1ac\")  10}"}
+{"time":"2024-09-04T14:05:01.988714+07:00","level":"INFO","msg":"Execution Time (Insert New Product): 746.7µs"}

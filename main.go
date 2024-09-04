@@ -26,8 +26,8 @@ func main() {
 
 	data, _ := db.NewDB(config.DB)
 	repo := repository.NewProductRepository(data)
-	service := service.NewProductService(repo)
-	productController := controller.NewProductController(service)
+	serv := service.NewProductService(repo)
+	productController := controller.NewProductController(serv)
 
 	//if err != nil {
 	//	os.Exit(1)

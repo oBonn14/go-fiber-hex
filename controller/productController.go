@@ -71,7 +71,7 @@ func (pc *ProductController) GetProducts(ctx *fiber.Ctx) error {
 }
 
 type updateProductRequest struct {
-	Product string `json:"product" validate:"required"`
+	Product string `json:"productName" validate:"required"`
 	Stock   int    `json:"stock" validate:"required"`
 }
 

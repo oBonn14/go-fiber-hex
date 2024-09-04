@@ -29,7 +29,7 @@ func (pr *ProductRepository) fromEntity(product model.Product) Product {
 }
 
 type Product struct {
-	ID      primitive.ObjectID `bson:"_id"`
+	ID      primitive.ObjectID `bson:"_id,omitempty"`
 	Product string             `bson:"product"`
 	Stock   int                `bson:"stock"`
 }
